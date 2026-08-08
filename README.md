@@ -4,10 +4,6 @@ An AI-powered virtual price comparison platform developed as my Bachelor's Thesi
 
 The application combines web scraping, search APIs, artificial intelligence, and a relational database to identify, filter, and compare product offers from Romanian online stores.
 
-## Preview
-
-<!-- Add screenshots of the application here -->
-
 ## What it does
 
 The platform allows users to:
@@ -96,10 +92,8 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ```
 
-**Do not commit your `.env` file or API keys to the repository.**
+**Create your own API keys and add them to the .env file. Do not commit the .env file or expose your API keys publicly.**
 
 ## Academic Project
 
 Developed as a Bachelor's Thesis for the **Business Informatics** program.
-
-**Bachelor's Thesis – AI-Powered Virtual Price Comparator**
