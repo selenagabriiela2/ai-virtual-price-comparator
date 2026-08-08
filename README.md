@@ -39,7 +39,7 @@ The application allows users to search for products, identify and compare offers
 ai-virtual-price-comparator/
 │
 ├── aplicatie.py       # Streamlit user interface
-├── licenta.py         # Product search, scraping and price extraction
+├── licenta.py         # Product search, web scraping and price extraction
 ├── database.py        # SQLite database management
 ├── randare.py         # AI-powered image generation
 ├── schema.sql         # Database structure
