@@ -14,8 +14,9 @@ The platform allows users to:
 - Extract and validate product prices using multiple methods
 - Filter irrelevant, invalid, or incomplete offers
 - Generate and visualize product images using Google Gemini AI
+- Display and filter collected results in an interactive interface
 - Store products, offers, searches, and images in a SQLite database
-- Export collected results to CSV
+- Analyze and compare generative AI models based on evaluation data
 
 ## Technologies
 
@@ -55,7 +56,8 @@ ai-virtual-price-comparator/
 │   ├── aplicatie.py
 │   ├── database.py
 │   ├── licenta.py
-│   └── randare.py
+│   ├── randare.py
+│   └── rezultate.csv
 │
 ├── .gitignore
 ├── README.md
@@ -72,16 +74,24 @@ The extracted offers are subsequently processed and filtered to remove invalid o
 
 ## AI Integration
 
-Google Gemini AI is used for AI-assisted product image generation and visualization.
+Google Gemini AI is used for AI-assisted product image generation and visual product exploration.
+
+The application also includes a comparative evaluation of generative AI models based on multiple image-generation tasks and quality criteria.
 
 SerpAPI is used to access Google Shopping and Google Lens, supporting product discovery and visual matching.
+
+## AI Model Evaluation
+
+The application includes a comparative evaluation of generative AI models based on 150 evaluations across multiple image-generation tasks and quality criteria.
+
+The results can be filtered by model and category and visualized using different charts to compare model performance and generation time.
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ai-virtual-price-comparator.git
+git clone https://github.com/selenagabriiela2/ai-virtual-price-comparator.git
 cd ai-virtual-price-comparator
 ```
 
@@ -89,6 +99,13 @@ Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+cd src
+streamlit run aplicatie.py
 ```
 
 ## Configuration
