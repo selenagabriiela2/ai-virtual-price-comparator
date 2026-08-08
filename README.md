@@ -23,10 +23,14 @@ The platform allows users to:
 
 ## Technologies
 
-**Core:** Python, Streamlit, SQLite  
-**Search & Data Collection:** SerpAPI, Google Shopping, Google Lens  
-**AI:** Google Gemini  
-**Web Scraping:** BeautifulSoup, lxml, JSON-LD, Meta Tags, Regex  
+**Core:** Python, Streamlit, SQLite
+
+**Search & Data Collection:** SerpAPI, Google Shopping, Google Lens
+
+**AI:** Google Gemini
+
+**Web Scraping:** BeautifulSoup, lxml, JSON-LD, Meta Tags, Regex
+
 **Data Processing:** Pandas, NumPy
 
 ## Architecture
@@ -49,45 +53,53 @@ ai-virtual-price-comparator/
 ├── schema.sql         # Database structure
 ├── requirements.txt   # Python dependencies
 └── README.md
+```
 
-Price Extraction
+## Price Extraction
 
 The application uses a multi-stage mechanism for detecting product prices:
 
-JSON-LD → Meta Tags → Regex → SerpAPI fallback
+**JSON-LD → Meta Tags → Regex → SerpAPI fallback**
 
 The extracted offers are subsequently processed and filtered to remove invalid or irrelevant results.
 
-AI Integration
+## AI Integration
 
 Google Gemini AI is used for AI-assisted product image generation and visualization.
 
 SerpAPI is used to access Google Shopping and Google Lens, supporting product discovery and visual matching.
 
-Installation
+## Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/YOUR-USERNAME/ai-virtual-price-comparator.git
 cd ai-virtual-price-comparator
+```
 
 Install the required dependencies:
 
+```bash
 pip install -r requirements.txt
-Configuration
+```
 
-Create a .env file in the project root and add the required API credentials:
+## Configuration
 
+Create a `.env` file in the project root and add the required API credentials:
+
+```env
 GEMINI_API_KEY=your_gemini_api_key
 SERPAPI_KEY=your_serpapi_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+```
 
-Do not commit your .env file or API keys to the repository.
+**Do not commit your `.env` file or API keys to the repository.**
 
-Academic Project
+## Academic Project
 
-Developed as a Bachelor's Thesis for the Business Informatics program.
+Developed as a Bachelor's Thesis for the **Business Informatics** program.
 
-Bachelor's Thesis – AI-Powered Virtual Price Comparator
+**Bachelor's Thesis – AI-Powered Virtual Price Comparator**
