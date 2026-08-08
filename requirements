@@ -1,0 +1,23 @@
+# Web application
+streamlit
+
+# Data processing and visualization
+pandas
+numpy
+matplotlib
+
+# Web scraping and HTTP requests
+requests
+beautifulsoup4
+lxml
+
+# Environment variables and cloud image storage
+python-dotenv
+cloudinary
+
+# Google AI services
+google-generativeai
+google-genai
+
+# Image processing
+Pillow
