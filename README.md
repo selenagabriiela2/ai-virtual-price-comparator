@@ -18,6 +18,24 @@ The platform allows users to:
 - Store products, offers, searches, and images in a SQLite database
 - Analyze and compare generative AI models based on evaluation data
 
+## Screenshots
+
+**Price Comparison**
+
+<img src="screenshots/price-comparison.png" width="600">
+
+**AI Image Generation**
+
+<img src="screenshots/ai-generation.png" width="600">
+
+**AI Analysis**
+
+<img src="screenshots/ai-analysis.png" width="600">
+
+**Database Interface**
+
+<img src="screenshots/database-interface.png" width="600">
+
 ## Technologies
 
 **Core:** Python, Streamlit, SQLite
