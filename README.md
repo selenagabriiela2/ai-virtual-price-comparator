@@ -42,13 +42,24 @@ The application follows a modular architecture consisting of:
 ```text
 ai-virtual-price-comparator/
 │
-├── aplicatie.py       # Streamlit user interface
-├── licenta.py         # Product search, web scraping and price extraction
-├── database.py        # SQLite database management
-├── randare.py         # AI-powered image generation
-├── schema.sql         # Database structure
-├── requirements.txt   # Python dependencies
-└── README.md
+├── database/
+│   └── schema.sql
+│
+├── screenshots/
+│   ├── ai-analysis.png
+│   ├── ai-generation.png
+│   ├── database-interface.png
+│   └── price-comparison.png
+│
+├── src/
+│   ├── aplicatie.py
+│   ├── database.py
+│   ├── licenta.py
+│   └── randare.py
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ## Price Extraction
