@@ -1,39 +1,43 @@
 # AI-Powered Virtual Price Comparator
 
-AI-powered virtual price comparison platform developed as a Bachelor's Thesis in Business Informatics.
+An AI-powered virtual price comparison platform developed as my Bachelor's Thesis in Business Informatics.
 
-The application allows users to search for products, identify and compare offers from Romanian online stores, and visualize the results through an interactive interface.
+The application combines web scraping, search APIs, artificial intelligence, and a relational database to identify, filter, and compare product offers from Romanian online stores.
 
-## Features
+## Preview
 
-- Product search by text or image
-- Google Shopping integration through SerpAPI
-- Google Lens integration through SerpAPI for visual product search
-- Multi-stage price extraction using JSON-LD, Meta Tags, Regex, with SerpAPI as fallback
-- Product category identification and offer filtering
-- Detection and elimination of invalid or irrelevant offers
-- Romanian store filtering
-- AI-assisted product image generation using Google Gemini
-- Product visualization
-- SQLite database for products, offers, searches, and images
-- Interactive dashboard for offer comparison and data visualization
-- CSV export
+<!-- Add screenshots of the application here -->
+
+## What it does
+
+The platform allows users to:
+
+- Search for products using text or images
+- Find products through Google Shopping and Google Lens
+- Collect and compare offers from Romanian online stores
+- Extract and validate product prices using multiple methods
+- Filter irrelevant, invalid, or incomplete offers
+- Generate and visualize product images using Google Gemini AI
+- Store products, offers, searches, and images in a SQLite database
+- Export collected results to CSV
 
 ## Technologies
 
-- Python
-- Streamlit
-- SQLite
-- SerpAPI
-- Google Shopping
-- Google Lens
-- Google Gemini AI
-- BeautifulSoup
-- lxml
-- Pandas
-- NumPy
+**Core:** Python, Streamlit, SQLite  
+**Search & Data Collection:** SerpAPI, Google Shopping, Google Lens  
+**AI:** Google Gemini  
+**Web Scraping:** BeautifulSoup, lxml, JSON-LD, Meta Tags, Regex  
+**Data Processing:** Pandas, NumPy
 
-## Project Structure
+## Architecture
+
+The application follows a modular architecture consisting of:
+
+- **Frontend** – Streamlit user interface
+- **Backend** – product search, scraping, processing, and AI integration
+- **Database** – SQLite database for storing products, offers, searches, and images
+
+### Project Structure
 
 ```text
 ai-virtual-price-comparator/
@@ -45,3 +49,45 @@ ai-virtual-price-comparator/
 ├── schema.sql         # Database structure
 ├── requirements.txt   # Python dependencies
 └── README.md
+
+Price Extraction
+
+The application uses a multi-stage mechanism for detecting product prices:
+
+JSON-LD → Meta Tags → Regex → SerpAPI fallback
+
+The extracted offers are subsequently processed and filtered to remove invalid or irrelevant results.
+
+AI Integration
+
+Google Gemini AI is used for AI-assisted product image generation and visualization.
+
+SerpAPI is used to access Google Shopping and Google Lens, supporting product discovery and visual matching.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/YOUR-USERNAME/ai-virtual-price-comparator.git
+cd ai-virtual-price-comparator
+
+Install the required dependencies:
+
+pip install -r requirements.txt
+Configuration
+
+Create a .env file in the project root and add the required API credentials:
+
+GEMINI_API_KEY=your_gemini_api_key
+SERPAPI_KEY=your_serpapi_key
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+Do not commit your .env file or API keys to the repository.
+
+Academic Project
+
+Developed as a Bachelor's Thesis for the Business Informatics program.
+
+Bachelor's Thesis – AI-Powered Virtual Price Comparator
